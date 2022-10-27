@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune House Price Prediction</title>
+</head>
+
+<body style="background-color: rgb(233, 75, 75);">
+
+    <h1> House Price Prediction in Pune </h1>
+    <form method="POST" action="/predict_price">
+
+        <label>Area Type:</label>
+        <select name = "area_type">
+            <option value = "Super built-up  Area">Super built-up  Area</option>
+            <option value = "Built-up  Area">Built-up  Area</option>
+            <option value = "Plot  Area">Plot  Area</option>
+            <option value = "Carpet  Area">Carpet  Area</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Availability:</label>
+        <input type = "text" name = "availability">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Size:</label>
+        <input type = "text" name = "size">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Total sqft:</label>
+        <input type = "text" name = "total_sqft">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Bath:</label>
+        <input type = "text" name = "bath">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Balcony:</label>
+        <select name = "balcony">
+            <option value = "0.0">0</option>
+            <option value = "1.0">1</option>
+            <option value = "2.0">2</option>
+            <option value = "3.0">3</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Site Location:</label>
+        <input type = "text" name = "site_location">
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>Your House Price will be <b> {{ prediction }} /- Rs.</b> Only </p>
+
+
+    </form>
+
+
+</body>
+</html>
